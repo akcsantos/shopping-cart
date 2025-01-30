@@ -19,13 +19,22 @@ export default function Header() {
           </Link>
 
           <ul className="hidden tablet:inline-block">
-            <Link to="/" className="absolute right-80 top-4">
+            <Link
+              to="/"
+              className="absolute right-80 top-4 lapt:right-96 lapt:text-xl laptL:text-2xl"
+            >
               Home
             </Link>
-            <Link to="/products" className="absolute right-56 top-4">
+            <Link
+              to="/products"
+              className="absolute right-52 top-4 lapt:right-60 lapt:text-xl laptL:text-2xl"
+            >
               Products
             </Link>
-            <Link to="/about" className="absolute right-36 top-4">
+            <Link
+              to="/about"
+              className="absolute right-28 top-4 lapt:right-32 lapt:text-xl laptL:text-2xl"
+            >
               About
             </Link>
           </ul>

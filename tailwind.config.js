@@ -11,6 +11,12 @@ export default {
         lapt: "1024px",
         laptL: "1440px",
       },
+      backgroundImage: {
+        coffeeBg: "url('/coffeebg.jpg')",
+        blackOverlay:
+          "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%)",
+        smallAbout: "url('/small-about.jpg')",
+      },
     },
   },
   plugins: [],
