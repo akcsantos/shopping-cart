@@ -17,14 +17,14 @@ export default function Products() {
         }
         return response.json();
       })
-      .then((response) => setProducts(response))
-      .finally(() => setLoading(false));
+      .then((response) => setProducts(response));
+    // .finally(() => setLoading(false));
   }, []);
 
-  if (loading) return <div>Loading...</div>;
-  {
-    /* <Embed url="https://cdn.lordicon.com/ceaxohpl.json" width={400} /> */
-  }
+  // if (loading) return <div>Loading...</div>;
+  // {
+  //   /* <Embed url="https://cdn.lordicon.com/ceaxohpl.json" width={400} /> */
+  // }
   return (
     <div className="h-full w-screen flex-row justify-items-center tablet:flex tablet:flex-wrap tablet:place-content-center tablet:space-x-3">
       {products.map((product) => (

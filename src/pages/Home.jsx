@@ -1,20 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Home({ hamDisplay }) {
-  const [overFlow, setOverFlow] = useState("visible");
-
-  if (hamDisplay == "block") {
-    setOverFlow("hidden");
-  } else {
-    setOverFlow("visible");
-  }
-
+export default function Home() {
   return (
-    <div
-      className="flex-col justify-items-center p-6 tablet:px-20 lapt:px-32 laptL:px-40"
-      style={{ overflow: overFlow }}
-    >
+    <div className="flex-col justify-items-center p-6 tablet:px-20 lapt:px-32 laptL:px-40">
       <div className="text-center text-3xl font-bold italic lapt:text-4xl laptL:text-5xl">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </div>

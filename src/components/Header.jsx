@@ -2,12 +2,14 @@ import { Link } from "react-router-dom";
 import cartLogo from "../images/cart.png";
 import hamMenu from "../images/ham-menu.png";
 
-export default function Header({ hamDisplay, setHamDisplay }) {
+export default function Header({ hamDisplay, setHamDisplay, setBgPosition }) {
   function mobileNavigator() {
     if (hamDisplay === "block") {
       setHamDisplay("none");
+      setBgPosition("");
     } else {
       setHamDisplay("block");
+      setBgPosition("fixed");
     }
   }
 
@@ -19,7 +21,7 @@ export default function Header({ hamDisplay, setHamDisplay }) {
     <header className="flex w-full justify-center border-b-2 p-2 align-middle tablet:justify-start">
       <div
         style={{ display: hamDisplay }}
-        className="absolute mt-11 h-full w-11/12 space-y-6 border-2 bg-white text-2xl"
+        className="fixed mt-11 h-full w-11/12 space-y-6 border-2 bg-white text-2xl"
       >
         <div className="mt-8">
           <Link onClick={mobileNavigator} to={"/"}>

@@ -5,9 +5,15 @@ import { useState } from "react";
 
 function App() {
   const [hamDisplay, setHamDisplay] = useState("none");
+  const [bgPosition, setBgPosition] = useState("");
+
   return (
-    <div>
-      <Header hamDisplay={hamDisplay} setHamDisplay={setHamDisplay} />
+    <div style={{ position: bgPosition }}>
+      <Header
+        setBgPosition={setBgPosition}
+        hamDisplay={hamDisplay}
+        setHamDisplay={setHamDisplay}
+      />
       <Outlet hamDisplay={hamDisplay} setHamDisplay={setHamDisplay} />
     </div>
   );
