@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Header hamDisplay={hamDisplay} setHamDisplay={setHamDisplay} />
-      <Outlet setHamDisplay={setHamDisplay} />
+      <Outlet hamDisplay={hamDisplay} setHamDisplay={setHamDisplay} />
     </div>
   );
 }
